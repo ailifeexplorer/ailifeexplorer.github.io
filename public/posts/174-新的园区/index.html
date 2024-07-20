@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新的园区 | World AI 世界 AI</title>
+
+    
+
+
+
+<meta name="author" content="Dream" />
+<meta name="description" content="封面图拍摄来源于周内去逛了下个月要搬的新园区，环境挺好的，甚至还有足球场，非常有大学的感觉，很喜欢，期待后面可以在那儿快乐工作。
+记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+技术学习 Sam Altman 的如何创办初创企业
+https://startupclass.samaltman.com/
+这个 Sam Altman 的「如何创办初创企业」其实可以类比做独立开发者需要学习的点，是一系列视频讲座，最初于2014年秋季在斯坦福大学举行，个人感觉比那些收费的好一些，感兴趣的小伙伴可以看看。
+Linux 内核教学
+https://linux-kernel-labs-zh.xyz/index.html
+这个「Linux 内核教学」很适合想系统性了解 Linux 的小伙伴，文档内容基于布加勒斯特理工大学自动控制与计算机学院计算机科学与工程系的操作系统课程而来，里面有不少实践可以跟着玩一玩。
+潮流工具 Calendr：Mac 菜单栏日历工具
+https://github.com/pakerwreah/Calendr
+Mac 菜单栏日历工具可以试试这个开源的 Calendr，日历和日程的完美结合。
+Ollama：开箱即用好用的大模型本地工具
+https://ollama.com/
+假如让我推荐一个在本地电脑上安装并运行大模型的软件，我一定会推荐 Ollama，极简好用，作者通过开箱即用把大量复杂的过程给简化了，产品化过程非常适合我们工程师学习，可以通过它去玩玩最近很火效果不错的 llama3 模型。
+LLM Pricing 各种收费大模型的价格
+https://llmpricecheck.com/
+发现一个当前业界各种收费大模型的价格，很清晰的展示出来了，包括质量、上下文长度、输入输出价格、知识时间，可以通过这个大概估算对比出一些价格，也可以比较好的来对比。
+DrawDB：免费简单的数据库设计工具*
+https://drawdb.vercel.app/
+一款免费、简单、直观的数据库设计工具和 SQL 生成器可以试试，类似于那种可视化的方式来设计你的数据库，用简单拖动的方式来建议关系，支持导出成各种 SQL 版本。
+随便看看 推荐网飞韩剧寄生兽
+https://movie.douban.com/subject/35954429/
+很推荐这个网飞韩剧「寄生兽」，从漫画改编得很好看，节奏紧凑不拖泥带水，视觉效果做得也很好，6 集爽剧可以一口气看完的那种。 随便写写：杭州好吃的面推荐
+我一直感觉老余杭的面馆比杭州市内的杭帮面更好吃，后者偏甜吃不习惯，不太喜欢甜口的我觉得老余杭的面做得有韵味不少。
+今天又吃到了「老太婆面馆」，一家开在老余杭镇上家里的面，直接在亭子里面摆桌子，付钱后拿一个手写的号等着叫，基本上都是周边人吃，爆鳝面做得很好吃一绝，甚至可以点双倍爆鳝，我一般会再加一个荷包蛋盖住上面，有滋有味。
+在杭州生活这几年挖掘到几家挺好吃的面馆，想换换口味的周边小伙伴可以去试试。
+1️⃣ 假如喜欢吃腰花、爆鳝、虾爆鳝这类的面可以去老太婆家试试。
+2️⃣ 假如喜欢吃片儿川，一定要去试试三坝地铁站附近的老街面馆。
+3️⃣ 假如习惯拌川炒面这种，可以去试试仓前的夫妻面馆，可以点牛肉拌川加蛋炒碎，他家是腊牛肉，很好吃。
+4️⃣ 假如想试试汤面，可以去吃芒种家的三鲜面，真三鲜，有虾有鸡蛋有肉丸青菜料很足。" />
+
+
+<link rel="canonical" href="http://localhost:1313/posts/174-%E6%96%B0%E7%9A%84%E5%9B%AD%E5%8C%BA/" />
+
+
+<meta property="og:url" content="http://localhost:1313/posts/174-%E6%96%B0%E7%9A%84%E5%9B%AD%E5%8C%BA/">
+  <meta property="og:site_name" content="World AI 世界 AI">
+  <meta property="og:title" content="新的园区">
+  <meta property="og:description" content="封面图拍摄来源于周内去逛了下个月要搬的新园区，环境挺好的，甚至还有足球场，非常有大学的感觉，很喜欢，期待后面可以在那儿快乐工作。
+记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+技术学习 Sam Altman 的如何创办初创企业
+https://startupclass.samaltman.com/
+这个 Sam Altman 的「如何创办初创企业」其实可以类比做独立开发者需要学习的点，是一系列视频讲座，最初于2014年秋季在斯坦福大学举行，个人感觉比那些收费的好一些，感兴趣的小伙伴可以看看。
+Linux 内核教学
+https://linux-kernel-labs-zh.xyz/index.html
+这个「Linux 内核教学」很适合想系统性了解 Linux 的小伙伴，文档内容基于布加勒斯特理工大学自动控制与计算机学院计算机科学与工程系的操作系统课程而来，里面有不少实践可以跟着玩一玩。
+潮流工具 Calendr：Mac 菜单栏日历工具
+https://github.com/pakerwreah/Calendr
+Mac 菜单栏日历工具可以试试这个开源的 Calendr，日历和日程的完美结合。
+Ollama：开箱即用好用的大模型本地工具
+https://ollama.com/
+假如让我推荐一个在本地电脑上安装并运行大模型的软件，我一定会推荐 Ollama，极简好用，作者通过开箱即用把大量复杂的过程给简化了，产品化过程非常适合我们工程师学习，可以通过它去玩玩最近很火效果不错的 llama3 模型。
+LLM Pricing 各种收费大模型的价格
+https://llmpricecheck.com/
+发现一个当前业界各种收费大模型的价格，很清晰的展示出来了，包括质量、上下文长度、输入输出价格、知识时间，可以通过这个大概估算对比出一些价格，也可以比较好的来对比。
+DrawDB：免费简单的数据库设计工具*
+https://drawdb.vercel.app/
+一款免费、简单、直观的数据库设计工具和 SQL 生成器可以试试，类似于那种可视化的方式来设计你的数据库，用简单拖动的方式来建议关系，支持导出成各种 SQL 版本。
+随便看看 推荐网飞韩剧寄生兽
+https://movie.douban.com/subject/35954429/
+很推荐这个网飞韩剧「寄生兽」，从漫画改编得很好看，节奏紧凑不拖泥带水，视觉效果做得也很好，6 集爽剧可以一口气看完的那种。 随便写写：杭州好吃的面推荐
+我一直感觉老余杭的面馆比杭州市内的杭帮面更好吃，后者偏甜吃不习惯，不太喜欢甜口的我觉得老余杭的面做得有韵味不少。
+今天又吃到了「老太婆面馆」，一家开在老余杭镇上家里的面，直接在亭子里面摆桌子，付钱后拿一个手写的号等着叫，基本上都是周边人吃，爆鳝面做得很好吃一绝，甚至可以点双倍爆鳝，我一般会再加一个荷包蛋盖住上面，有滋有味。
+在杭州生活这几年挖掘到几家挺好吃的面馆，想换换口味的周边小伙伴可以去试试。
+1️⃣ 假如喜欢吃腰花、爆鳝、虾爆鳝这类的面可以去老太婆家试试。
+2️⃣ 假如喜欢吃片儿川，一定要去试试三坝地铁站附近的老街面馆。
+3️⃣ 假如习惯拌川炒面这种，可以去试试仓前的夫妻面馆，可以点牛肉拌川加蛋炒碎，他家是腊牛肉，很好吃。
+4️⃣ 假如想试试汤面，可以去吃芒种家的三鲜面，真三鲜，有虾有鸡蛋有肉丸青菜料很足。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-04-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-29T00:00:00+00:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="新的园区">
+  <meta name="twitter:description" content="封面图拍摄来源于周内去逛了下个月要搬的新园区，环境挺好的，甚至还有足球场，非常有大学的感觉，很喜欢，期待后面可以在那儿快乐工作。
+记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+技术学习 Sam Altman 的如何创办初创企业
+https://startupclass.samaltman.com/
+这个 Sam Altman 的「如何创办初创企业」其实可以类比做独立开发者需要学习的点，是一系列视频讲座，最初于2014年秋季在斯坦福大学举行，个人感觉比那些收费的好一些，感兴趣的小伙伴可以看看。
+Linux 内核教学
+https://linux-kernel-labs-zh.xyz/index.html
+这个「Linux 内核教学」很适合想系统性了解 Linux 的小伙伴，文档内容基于布加勒斯特理工大学自动控制与计算机学院计算机科学与工程系的操作系统课程而来，里面有不少实践可以跟着玩一玩。
+潮流工具 Calendr：Mac 菜单栏日历工具
+https://github.com/pakerwreah/Calendr
+Mac 菜单栏日历工具可以试试这个开源的 Calendr，日历和日程的完美结合。
+Ollama：开箱即用好用的大模型本地工具
+https://ollama.com/
+假如让我推荐一个在本地电脑上安装并运行大模型的软件，我一定会推荐 Ollama，极简好用，作者通过开箱即用把大量复杂的过程给简化了，产品化过程非常适合我们工程师学习，可以通过它去玩玩最近很火效果不错的 llama3 模型。
+LLM Pricing 各种收费大模型的价格
+https://llmpricecheck.com/
+发现一个当前业界各种收费大模型的价格，很清晰的展示出来了，包括质量、上下文长度、输入输出价格、知识时间，可以通过这个大概估算对比出一些价格，也可以比较好的来对比。
+DrawDB：免费简单的数据库设计工具*
+https://drawdb.vercel.app/
+一款免费、简单、直观的数据库设计工具和 SQL 生成器可以试试，类似于那种可视化的方式来设计你的数据库，用简单拖动的方式来建议关系，支持导出成各种 SQL 版本。
+随便看看 推荐网飞韩剧寄生兽
+https://movie.douban.com/subject/35954429/
+很推荐这个网飞韩剧「寄生兽」，从漫画改编得很好看，节奏紧凑不拖泥带水，视觉效果做得也很好，6 集爽剧可以一口气看完的那种。 随便写写：杭州好吃的面推荐
+我一直感觉老余杭的面馆比杭州市内的杭帮面更好吃，后者偏甜吃不习惯，不太喜欢甜口的我觉得老余杭的面做得有韵味不少。
+今天又吃到了「老太婆面馆」，一家开在老余杭镇上家里的面，直接在亭子里面摆桌子，付钱后拿一个手写的号等着叫，基本上都是周边人吃，爆鳝面做得很好吃一绝，甚至可以点双倍爆鳝，我一般会再加一个荷包蛋盖住上面，有滋有味。
+在杭州生活这几年挖掘到几家挺好吃的面馆，想换换口味的周边小伙伴可以去试试。
+1️⃣ 假如喜欢吃腰花、爆鳝、虾爆鳝这类的面可以去老太婆家试试。
+2️⃣ 假如喜欢吃片儿川，一定要去试试三坝地铁站附近的老街面馆。
+3️⃣ 假如习惯拌川炒面这种，可以去试试仓前的夫妻面馆，可以点牛肉拌川加蛋炒碎，他家是腊牛肉，很好吃。
+4️⃣ 假如想试试汤面，可以去吃芒种家的三鲜面，真三鲜，有虾有鸡蛋有肉丸青菜料很足。">
+
+
+
+<meta name="generator" content="Hugo 0.129.0">
+
+<link rel="stylesheet" href="/css/output.css" />
+
+<style>
+
+
+
+</style>
+
+
+    
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 pt-4 pb-4">
+
+  <div class="container flex justify-between px-4">
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="World AI 世界 AI" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          World AI 世界 AI
+        </a>
+        
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square">
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow">
+        
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+
+      
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+        <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+      </a>
+      
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <section class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  <section class="mx-auto prose dark:prose-invert" id="dream-single-page">
+    <header>
+      <h1>新的园区</h1>
+      <p class="text-sm">
+        
+          
+            Monday, Apr 29, 2024
+          
+        
+
+        | <span>1 minute read</span>
+
+        
+        | <span>Update at
+          
+            
+              Monday, Apr 29, 2024
+            
+          </span>
+        
+      </p>
+      <div class="flex justify-between">
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span>
+  
+    Dream
+  
+  </span>
+</div>
+
+
+        <span class="flex items-center gap-2">
+  <a class="group inline-flex items-center p-2 text-sm rounded-full cursor-pointer hover:bg-primary" href="https://twitter.com/intent/tweet?text=%e6%96%b0%e7%9a%84%e5%9b%ad%e5%8c%ba&url=http%3a%2f%2flocalhost%3a1313%2fposts%2f174-%25E6%2596%25B0%25E7%259A%2584%25E5%259B%25AD%25E5%258C%25BA%2f" title="Share on X">
+    <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+  </a>
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2f174-%25E6%2596%25B0%25E7%259A%2584%25E5%259B%25AD%25E5%258C%25BA%2f" title="Share on Facebook">
+    <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+  </a>
+</span>
+
+      </div>
+    </header>
+
+    <main>
+      
+
+      <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->封面图拍摄来源于周内去逛了下个月要搬的新园区，环境挺好的，甚至还有足球场，非常有大学的感觉，很喜欢，期待后面可以在那儿快乐工作。<!-- raw HTML omitted --></p>
+<blockquote>
+<p><strong>记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知</strong></p>
+</blockquote>
+<h2 id="技术学习">技术学习</h2>
+<p><strong>Sam Altman 的如何创办初创企业</strong><br>
+<a href="https://startupclass.samaltman.com/">https://startupclass.samaltman.com/</a><br>
+这个 Sam Altman 的「如何创办初创企业」其实可以类比做独立开发者需要学习的点，是一系列视频讲座，最初于2014年秋季在斯坦福大学举行，个人感觉比那些收费的好一些，感兴趣的小伙伴可以看看。</p>
+<p><strong>Linux 内核教学</strong><br>
+<a href="https://linux-kernel-labs-zh.xyz/index.html">https://linux-kernel-labs-zh.xyz/index.html</a><br>
+这个「Linux 内核教学」很适合想系统性了解 Linux 的小伙伴，文档内容基于布加勒斯特理工大学自动控制与计算机学院计算机科学与工程系的操作系统课程而来，里面有不少实践可以跟着玩一玩。</p>
+<h2 id="潮流工具">潮流工具</h2>
+<p><strong>Calendr：Mac 菜单栏日历工具</strong><br>
+<a href="https://github.com/pakerwreah/Calendr">https://github.com/pakerwreah/Calendr</a><br>
+Mac 菜单栏日历工具可以试试这个开源的 Calendr，日历和日程的完美结合。<br>
+<!-- raw HTML omitted --></p>
+<p><strong>Ollama：开箱即用好用的大模型本地工具</strong><br>
+<a href="https://ollama.com/">https://ollama.com/</a><br>
+假如让我推荐一个在本地电脑上安装并运行大模型的软件，我一定会推荐 Ollama，极简好用，作者通过开箱即用把大量复杂的过程给简化了，产品化过程非常适合我们工程师学习，可以通过它去玩玩最近很火效果不错的 llama3 模型。<br>
+<!-- raw HTML omitted --></p>
+<p><strong>LLM Pricing 各种收费大模型的价格</strong><br>
+<a href="https://llmpricecheck.com/">https://llmpricecheck.com/</a><br>
+发现一个当前业界各种收费大模型的价格，很清晰的展示出来了，包括质量、上下文长度、输入输出价格、知识时间，可以通过这个大概估算对比出一些价格，也可以比较好的来对比。<br>
+<!-- raw HTML omitted --></p>
+<p><em>DrawDB：免费简单的数据库设计工具</em>*<br>
+<a href="https://drawdb.vercel.app/">https://drawdb.vercel.app/</a><br>
+一款免费、简单、直观的数据库设计工具和 SQL 生成器可以试试，类似于那种可视化的方式来设计你的数据库，用简单拖动的方式来建议关系，支持导出成各种 SQL 版本。<br>
+<!-- raw HTML omitted --></p>
+<h2 id="随便看看">随便看看</h2>
+<p><strong>推荐网飞韩剧寄生兽</strong><br>
+<a href="https://movie.douban.com/subject/35954429/">https://movie.douban.com/subject/35954429/</a><br>
+很推荐这个网飞韩剧「寄生兽」，从漫画改编得很好看，节奏紧凑不拖泥带水，视觉效果做得也很好，6 集爽剧可以一口气看完的那种。
+<!-- raw HTML omitted --></p>
+<p><strong>随便写写：杭州好吃的面推荐</strong></p>
+<p>我一直感觉老余杭的面馆比杭州市内的杭帮面更好吃，后者偏甜吃不习惯，不太喜欢甜口的我觉得老余杭的面做得有韵味不少。</p>
+<p>今天又吃到了「老太婆面馆」，一家开在老余杭镇上家里的面，直接在亭子里面摆桌子，付钱后拿一个手写的号等着叫，基本上都是周边人吃，爆鳝面做得很好吃一绝，甚至可以点双倍爆鳝，我一般会再加一个荷包蛋盖住上面，有滋有味。</p>
+<p><strong>在杭州生活这几年挖掘到几家挺好吃的面馆，想换换口味的周边小伙伴可以去试试。</strong></p>
+<p>1️⃣ 假如喜欢吃腰花、爆鳝、虾爆鳝这类的面可以去老太婆家试试。<br>
+2️⃣ 假如喜欢吃片儿川，一定要去试试三坝地铁站附近的老街面馆。<br>
+3️⃣ 假如习惯拌川炒面这种，可以去试试仓前的夫妻面馆，可以点牛肉拌川加蛋炒碎，他家是腊牛肉，很好吃。<br>
+4️⃣ 假如想试试汤面，可以去吃芒种家的三鲜面，真三鲜，有虾有鸡蛋有肉丸青菜料很足。<br>
+<!-- raw HTML omitted --></p>
+
+    </main>
+  </section>
+
+  
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+  
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+    <article>
+      <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+        this.page.identifier = '\/posts\/174-%E6%96%B0%E7%9A%84%E5%9B%AD%E5%8C%BA\/';
+        this.page.title = '新的园区';
+        this.page.url = 'http:\/\/localhost:1313\/posts\/174-%E6%96%B0%E7%9A%84%E5%9B%AD%E5%8C%BA\/';
+    };
+    function initDisqus() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "your-disqus-shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+    setTimeout(() => {
+        initDisqus();
+    }, 3000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+    
+
+    
+
+    
+  </section>
+</div>
+
+
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+              <div>
+  
+  <p>
+    © 2016 - 2024 World AI 世界 AI
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-300 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="container">
+            <div class="dream-grid">
+  
+
+  
+
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+
+  window.hasTwitterEmbed =  null 
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<script src="/js/grid.js"></script>
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

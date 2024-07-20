@@ -2,25 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-07-19T10:43:26-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/category1/</loc>
-    <lastmod>2024-07-19T10:43:26-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/my-third-post/</loc>
     <lastmod>2024-07-19T10:43:26-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-07-19T10:43:26-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tag1/</loc>
-    <lastmod>2024-07-19T10:43:26-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tag2/</loc>
-    <lastmod>2024-07-19T10:43:26-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-07-19T10:43:26-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
@@ -31,5 +16,19 @@
   </url><url>
     <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2024-07-19T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/156-%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/157-%E5%BC%95%E5%8A%9B%E5%89%A7%E5%9C%BA/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/171-%E7%9C%8B%E8%99%9E%E7%BE%8E%E4%BA%BA/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/174-%E6%96%B0%E7%9A%84%E5%9B%AD%E5%8C%BA/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/185-%E4%B9%A1%E4%B8%8B%E4%BA%BA%E7%9A%84%E6%82%B2%E6%AD%8C/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
