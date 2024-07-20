@@ -12,7 +12,7 @@
 
 
 
-<meta name="author" content="Dream" />
+<meta name="author" content="John AI" />
 <meta name="description" content="封面图来源于假期径山花海拍摄的虞美人，看牌子上写的是野罂粟，貌似是第一次认真观察这种花，远看很漂亮，特别是有风的时候这个效果太好了。
 记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
 技术学习 成长为高级工程师的路径
@@ -177,6 +177,14 @@ V2EX 上一个有意思的问答，问答同学有提出如下 5 类配比，你
         
 
 
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
 
 
 <li>
@@ -188,7 +196,21 @@ V2EX 上一个有意思的问答，问答同学有提出如下 5 类配比，你
 
 
 
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
 
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
 
 
 
@@ -196,6 +218,11 @@ V2EX 上一个有意思的问答，问答同学有提出如下 5 类配比，你
       </ul>
     </div>
     <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="About">About</div>
+      
       
 
       
@@ -207,7 +234,15 @@ V2EX 上一个有意思的问答，问答同学有提出如下 5 类配比，你
       
 
       
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+        <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+      </a>
+      
 
+      
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+        <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+      </a>
       
 
       
@@ -251,7 +286,7 @@ V2EX 上一个有意思的问答，问答同学有提出如下 5 类配比，你
 
   <span>
   
-    Dream
+    John AI
   
   </span>
 </div>
@@ -413,6 +448,25 @@ V2EX 上一个有意思的问答，问答同学有提出如下 5 类配比，你
         <section class="back">
           <div class="container">
             <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">About Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Hi, my name is John Ai.</p>
+<p>This is my blog.</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
   
 
   

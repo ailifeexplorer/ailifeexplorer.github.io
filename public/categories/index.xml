@@ -6,6 +6,14 @@
     <description>Recent content in Categories on World AI 世界 AI</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Fri, 19 Jul 2024 22:11:48 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Category1</title>
+      <link>http://localhost:1313/categories/category1/</link>
+      <pubDate>Fri, 19 Jul 2024 22:11:48 -0400</pubDate>
+      <guid>http://localhost:1313/categories/category1/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
