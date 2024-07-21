@@ -1,5 +1,6 @@
 ---
-date: 2024/07/08
+title: mamala
+date: 2024-07-08
 ---
 
 <img src="https://gw.alipayobjects.com/zos/k/1e/184.jpg" width="800" />
