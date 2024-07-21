@@ -1,6 +1,8 @@
 ---
 title: mamala
 date: 2024-07-08
+cover: /assets/160.jpg
+
 ---
 
 <img src="https://gw.alipayobjects.com/zos/k/1e/184.jpg" width="800" />
