@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | World AI 世界 AI</title>
+
+    
+
+
+
+<meta name="author" content="John AI" />
+<meta name="description" content="封面图拍摄来源用于喝完的苏打水瓶子水培薄荷生根后的效果，直接用简单从盆里剪了几根薄荷插到水了就活了，太太太有生命力的感觉了，还长了很多根须。
+记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+潮流工具 朋友做了一个超级好看的 Mac 暗色主题
+https://producthunt.com/posts/darkos-icon-pack
+好友 Viggo 两年前做的一套 Mac 图标发布到 ProductHunt 了,现在可以免费下载用了，想黑化桌面的可以下载试试，兑换码在 ProductHunt 的截图这里，点击复制到购买界面输入就可以免费下载！整理了 330&#43; 的 Mac 端 APP，比较适合开发者和设计师，文件大小 711.9 MB，配套做了 20 个壁纸，我已经用上了，很喜欢！
+独立开发者出海工具箱
+https://indiehackertools.net/
+哈哈哈，这个独立开发者开发的 独立开发者出海工具箱 对于不少喜欢折腾小伙伴应该挺有用的。
+这个 Git Cheat Sheet 不错
+https://wizardzines.com/git-cheat-sheet.pdf
+这个 git cheat sheet 对于 git 初学者甚至可以打印出来贴到桌上，应该会很方便，从 wizardzines 网站看到。
+喵闪字库：可免费下载商用的字体汇总
+https://miao3.cn/
+假如你需要寻找一些好看的字体，同时确定是可以免费下载，是否是免费商用，可以试试喵闪字库，加上预览功能挺好用的。
+技术文章 使用 RAG 释放非结构化数据的力量
+https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/
+Github 博客的一篇文章，前面的思路以及后面的文章引用挺值得一看。
+美团外卖基于 GPU 的向量检索系统实践
+https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html
+美团到家搜索技术团队与基础研发机器学习平台团队基于 GPU 实现了支持向量&#43;标量混合检索的通用检索系统，召回率与检索性能均有较大提升，这篇文章值得一看。
+随便看看 随便看看：真的教你用一个石头来做 CPU
+https://www.youtube.com/watch?v=vuvckBQ1bME
+这个视频太有趣了，教你怎么用石头来做一个 CPU，甚至经过 19 步还真有那么做出来的感觉，非常值得一看。" />
+
+
+<link rel="canonical" href="http://localhost:1313/posts/181-%E6%B0%B4%E5%9F%B9%E8%96%84%E8%8D%B7/" />
+
+
+<meta property="og:url" content="http://localhost:1313/posts/181-%E6%B0%B4%E5%9F%B9%E8%96%84%E8%8D%B7/">
+  <meta property="og:site_name" content="World AI 世界 AI">
+  <meta property="og:title" content="World AI 世界 AI">
+  <meta property="og:description" content="封面图拍摄来源用于喝完的苏打水瓶子水培薄荷生根后的效果，直接用简单从盆里剪了几根薄荷插到水了就活了，太太太有生命力的感觉了，还长了很多根须。
+记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+潮流工具 朋友做了一个超级好看的 Mac 暗色主题
+https://producthunt.com/posts/darkos-icon-pack
+好友 Viggo 两年前做的一套 Mac 图标发布到 ProductHunt 了,现在可以免费下载用了，想黑化桌面的可以下载试试，兑换码在 ProductHunt 的截图这里，点击复制到购买界面输入就可以免费下载！整理了 330&#43; 的 Mac 端 APP，比较适合开发者和设计师，文件大小 711.9 MB，配套做了 20 个壁纸，我已经用上了，很喜欢！
+独立开发者出海工具箱
+https://indiehackertools.net/
+哈哈哈，这个独立开发者开发的 独立开发者出海工具箱 对于不少喜欢折腾小伙伴应该挺有用的。
+这个 Git Cheat Sheet 不错
+https://wizardzines.com/git-cheat-sheet.pdf
+这个 git cheat sheet 对于 git 初学者甚至可以打印出来贴到桌上，应该会很方便，从 wizardzines 网站看到。
+喵闪字库：可免费下载商用的字体汇总
+https://miao3.cn/
+假如你需要寻找一些好看的字体，同时确定是可以免费下载，是否是免费商用，可以试试喵闪字库，加上预览功能挺好用的。
+技术文章 使用 RAG 释放非结构化数据的力量
+https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/
+Github 博客的一篇文章，前面的思路以及后面的文章引用挺值得一看。
+美团外卖基于 GPU 的向量检索系统实践
+https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html
+美团到家搜索技术团队与基础研发机器学习平台团队基于 GPU 实现了支持向量&#43;标量混合检索的通用检索系统，召回率与检索性能均有较大提升，这篇文章值得一看。
+随便看看 随便看看：真的教你用一个石头来做 CPU
+https://www.youtube.com/watch?v=vuvckBQ1bME
+这个视频太有趣了，教你怎么用石头来做一个 CPU，甚至经过 19 步还真有那么做出来的感觉，非常值得一看。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="World AI 世界 AI">
+  <meta name="twitter:description" content="封面图拍摄来源用于喝完的苏打水瓶子水培薄荷生根后的效果，直接用简单从盆里剪了几根薄荷插到水了就活了，太太太有生命力的感觉了，还长了很多根须。
+记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+潮流工具 朋友做了一个超级好看的 Mac 暗色主题
+https://producthunt.com/posts/darkos-icon-pack
+好友 Viggo 两年前做的一套 Mac 图标发布到 ProductHunt 了,现在可以免费下载用了，想黑化桌面的可以下载试试，兑换码在 ProductHunt 的截图这里，点击复制到购买界面输入就可以免费下载！整理了 330&#43; 的 Mac 端 APP，比较适合开发者和设计师，文件大小 711.9 MB，配套做了 20 个壁纸，我已经用上了，很喜欢！
+独立开发者出海工具箱
+https://indiehackertools.net/
+哈哈哈，这个独立开发者开发的 独立开发者出海工具箱 对于不少喜欢折腾小伙伴应该挺有用的。
+这个 Git Cheat Sheet 不错
+https://wizardzines.com/git-cheat-sheet.pdf
+这个 git cheat sheet 对于 git 初学者甚至可以打印出来贴到桌上，应该会很方便，从 wizardzines 网站看到。
+喵闪字库：可免费下载商用的字体汇总
+https://miao3.cn/
+假如你需要寻找一些好看的字体，同时确定是可以免费下载，是否是免费商用，可以试试喵闪字库，加上预览功能挺好用的。
+技术文章 使用 RAG 释放非结构化数据的力量
+https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/
+Github 博客的一篇文章，前面的思路以及后面的文章引用挺值得一看。
+美团外卖基于 GPU 的向量检索系统实践
+https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html
+美团到家搜索技术团队与基础研发机器学习平台团队基于 GPU 实现了支持向量&#43;标量混合检索的通用检索系统，召回率与检索性能均有较大提升，这篇文章值得一看。
+随便看看 随便看看：真的教你用一个石头来做 CPU
+https://www.youtube.com/watch?v=vuvckBQ1bME
+这个视频太有趣了，教你怎么用石头来做一个 CPU，甚至经过 19 步还真有那么做出来的感觉，非常值得一看。">
+
+
+
+<meta name="generator" content="Hugo 0.129.0">
+
+<link rel="stylesheet" href="/css/output.css" />
+
+<style>
+
+
+
+</style>
+
+
+    
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 pt-4 pb-4">
+
+  <div class="container flex justify-between px-4">
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="World AI 世界 AI" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          World AI 世界 AI
+        </a>
+        
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square">
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="About">About</div>
+      
+      
+
+      
+
+      
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+        <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+      </a>
+      
+
+      
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+        <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+      </a>
+      
+
+      
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+        <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+      </a>
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <section class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  <section class="mx-auto prose dark:prose-invert" id="dream-single-page">
+    <header>
+      <h1></h1>
+      <p class="text-sm">
+        
+          
+            Monday, Jan 1, 0001
+          
+        
+
+        | <span>1 minute read</span>
+
+        
+        | <span>Update at
+          
+            
+              Monday, Jan 1, 0001
+            
+          </span>
+        
+      </p>
+      <div class="flex justify-between">
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span>
+  
+    John AI
+  
+  </span>
+</div>
+
+
+        <span class="flex items-center gap-2">
+  <a class="group inline-flex items-center p-2 text-sm rounded-full cursor-pointer hover:bg-primary" href="https://twitter.com/intent/tweet?text=&url=http%3a%2f%2flocalhost%3a1313%2fposts%2f181-%25E6%25B0%25B4%25E5%259F%25B9%25E8%2596%2584%25E8%258D%25B7%2f" title="Share on X">
+    <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+  </a>
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2f181-%25E6%25B0%25B4%25E5%259F%25B9%25E8%2596%2584%25E8%258D%25B7%2f" title="Share on Facebook">
+    <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+  </a>
+</span>
+
+      </div>
+    </header>
+
+    <main>
+      
+
+      <!-- raw HTML omitted -->
+<p><!-- raw HTML omitted -->封面图拍摄来源用于喝完的苏打水瓶子水培薄荷生根后的效果，直接用简单从盆里剪了几根薄荷插到水了就活了，太太太有生命力的感觉了，还长了很多根须。<!-- raw HTML omitted --></p>
+<blockquote>
+<p><strong>记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知</strong></p>
+</blockquote>
+<h2 id="潮流工具">潮流工具</h2>
+<p><strong>朋友做了一个超级好看的 Mac 暗色主题</strong><br>
+<a href="https://producthunt.com/posts/darkos-icon-pack">https://producthunt.com/posts/darkos-icon-pack</a><br>
+好友 Viggo 两年前做的一套 Mac 图标发布到 ProductHunt 了,现在可以免费下载用了，想黑化桌面的可以下载试试，兑换码在 ProductHunt 的截图这里，点击复制到购买界面输入就可以免费下载！整理了 330+ 的 Mac 端 APP，比较适合开发者和设计师，文件大小 711.9 MB，配套做了 20 个壁纸，我已经用上了，很喜欢！<br>
+<!-- raw HTML omitted --></p>
+<p><strong>独立开发者出海工具箱</strong><br>
+<a href="https://indiehackertools.net/">https://indiehackertools.net/</a><br>
+哈哈哈，这个独立开发者开发的 独立开发者出海工具箱 对于不少喜欢折腾小伙伴应该挺有用的。<br>
+<!-- raw HTML omitted --></p>
+<p><strong>这个 Git Cheat Sheet 不错</strong><br>
+<a href="https://wizardzines.com/git-cheat-sheet.pdf">https://wizardzines.com/git-cheat-sheet.pdf</a><br>
+这个 git cheat sheet 对于 git 初学者甚至可以打印出来贴到桌上，应该会很方便，从 wizardzines 网站看到。<br>
+<!-- raw HTML omitted --></p>
+<p><strong>喵闪字库：可免费下载商用的字体汇总</strong><br>
+<a href="https://miao3.cn/">https://miao3.cn/</a><br>
+假如你需要寻找一些好看的字体，同时确定是可以免费下载，是否是免费商用，可以试试喵闪字库，加上预览功能挺好用的。<br>
+<!-- raw HTML omitted --></p>
+<h2 id="技术文章">技术文章</h2>
+<p><strong>使用 RAG 释放非结构化数据的力量</strong><br>
+<a href="https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/">https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/</a><br>
+Github 博客的一篇文章，前面的思路以及后面的文章引用挺值得一看。</p>
+<p><strong>美团外卖基于 GPU 的向量检索系统实践</strong><br>
+<a href="https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html">https://tech.meituan.com/2024/04/11/gpu-vector-retrieval-system-practice.html</a><br>
+美团到家搜索技术团队与基础研发机器学习平台团队基于 GPU 实现了支持向量+标量混合检索的通用检索系统，召回率与检索性能均有较大提升，这篇文章值得一看。</p>
+<h2 id="随便看看">随便看看</h2>
+<p><strong>随便看看：真的教你用一个石头来做 CPU</strong><br>
+<a href="https://www.youtube.com/watch?v=vuvckBQ1bME">https://www.youtube.com/watch?v=vuvckBQ1bME</a><br>
+这个视频太有趣了，教你怎么用石头来做一个 CPU，甚至经过 19 步还真有那么做出来的感觉，非常值得一看。<br>
+<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><strong>随便写写： 我是怎么半个月很舒服瘦了 8 斤的</strong></p>
+<p>想和大伙聊聊 <strong>我是怎么半个月很舒服瘦了 8 斤的</strong>，我不太喜欢通过吃难吃的健身餐以及困在满是机器健身房这种方式强迫自己瘦下来，主要是靠控糖+简单室外运动偏科学的方式。</p>
+<p>在吃这一块我从控糖革命学到的几点给很好的用上了，运动方式最近半年上下班改成骑行，有风很爽。</p>
+<p>1️⃣ 吃饭顺序，<strong>先吃蔬菜、然后吃肉、最后吃主食</strong>，按照这个顺序还有一个好处你会发现最后米饭吃不了多少，从而可以慢慢把米饭换成甜玉米或红薯，假如想吃水果就放到餐后吃，这个顺序可以提高餐后血糖稳定，延迟胃排空时间以及控制食欲。</p>
+<p>2️⃣ <strong>戒掉了劣质碳水</strong>，比如说之前喜欢的奶茶、炒饭、重庆小面、酸辣粉、螺蛳粉、辣条、蛋糕、披萨、炸薯条这类不健康的饮食，一般是高糖高热高盐低纤维那种，这里给换成冰块加苏打水搭配各种糖少东西如纯椰子水、冰美式，也是一样很爽。</p>
+<p>3️⃣ <strong>早晚喝 BRAGG 苹果醋</strong>，直接加水喝很酸很难喝，配上冰苏打水少量椰子水变成了一种很好喝的果汁，喝醋可以很好降血糖上升速度，把吃的东西能更好转化成肌肉糖原，而非脂肪存储。</p>
+<p>4️⃣ 其实坚持前三步，你的体重一周肯定会有降低，这个时候你有点儿成就感了，这个时候可以试试吃不知道热量东西的时候提前查下小红书某某食物是否高糖高热，会帮助你更科学，上次嘴馋，很想吃重庆小面，排队了一半，一查相当于 5.7 碗米饭，立马劝退换了一个同样好吃但健康很多的自助餐。</p>
+<p>5️⃣ 最后就是简单运动了，一般会习惯吃完饭去遛弯 20 分钟，随便走走消消食，然后上下班骑行是一种很好的运动方式，没有压力，来回 10km，甚至比开车上班要快，还可以见见路上形形色色的人挺好的。</p>
+<p>其实大家都知道不那么有肚子，长得干练是很好的，但也会得人需要吃好喝好才有意义，哈哈其实都是基因的错，大家都会选择轻松的吃好喝好，油腻以后也只会一笑哥曾经帅过，其实胖了影响的不仅是形象，更多还是健康，想活久一点，想外形自己看着舒服点，那还是需要控制下体重的。</p>
+
+    </main>
+  </section>
+
+  
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+  
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+    <article>
+      <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+        this.page.identifier = '\/posts\/181-%E6%B0%B4%E5%9F%B9%E8%96%84%E8%8D%B7\/';
+        this.page.title = '';
+        this.page.url = 'http:\/\/localhost:1313\/posts\/181-%E6%B0%B4%E5%9F%B9%E8%96%84%E8%8D%B7\/';
+    };
+    function initDisqus() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "your-disqus-shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+    setTimeout(() => {
+        initDisqus();
+    }, 3000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+    
+
+    
+
+    
+  </section>
+</div>
+
+
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+              <div>
+  
+  <p>
+    © 2016 - 2024 World AI 世界 AI
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-300 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="container">
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">About Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Hi, my name is John Ai.</p>
+<p>This is my blog.</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+
+  window.hasTwitterEmbed =  null 
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<script src="/js/grid.js"></script>
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
