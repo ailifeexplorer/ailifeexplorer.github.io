@@ -1,7 +1,7 @@
 ---
 title: My Third Post
 date: 2024-07-19T10:43:26-04:00
-cover: /assets/157.jpg
+cover: /assets/177.jpg
 author: John
 draft: false
 ---
