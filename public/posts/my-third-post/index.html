@@ -29,8 +29,6 @@
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-07-19T10:43:26-04:00">
     <meta property="article:modified_time" content="2024-07-19T10:43:26-04:00">
-    <meta property="article:tag" content="Tag1">
-    <meta property="article:tag" content="Tag2">
 
 
 
@@ -102,6 +100,14 @@
         
 
 
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
 
 
 <li>
@@ -135,6 +141,11 @@
       </ul>
     </div>
     <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="About">About</div>
+      
       
 
       
@@ -319,6 +330,25 @@
         <section class="back">
           <div class="container">
             <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">About Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Hi, my name is John Ai.</p>
+<p>This is my blog.</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
   
 
   

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富士山下 | World AI 世界 AI</title>
+
+    
+
+
+
+<meta name="author" content="John AI" />
+<meta name="description" content="封面图来源于从大阪到东京新干线途中所拍，恰逢天气很好，拍到了远处的富士山 🗻，很很很不错，大概 5min 中观看时间。
+记录每周看到的接地气的前端潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+技术学习 用 JS 获取系统的电量情况
+https://deepesh-01.github.io/battery_indicator/
+原来前端浏览器场景下可以通过 navigator.getBattery() 获取到当前系统的电池情况，是否在充电、当前电量、放电充电时间这些信息，可以想想可以用在什么场景？
+Hacker News：您见过的最好的讲座是什么？
+https://news.ycombinator.com/item?id=34591291
+Hacker News 上有一个这样的帖子，What&amp;rsquo;s the best lecture series you&amp;rsquo;ve seen? 您见过的最好的讲座是什么？可以是技术方面的，也可以是其他方面的，是什么让它如此特别？有很多讨论，可以挑着看看。
+1 分钟带你了解 Bento box 设计趋势
+https://mp.weixin.qq.com/s/pXePIwnERlZSUSHqNO_GFQ
+个人很喜欢这种设计风格，类似于便当盒的设计，不过其实挺难驾驭的。
+潮流工具 MJML：让邮件内容像网页一样展示
+https://mjml.io/
+应该有同学有想让邮件内容像网页一样展示，特别在企业订阅类邮件的场景，但是直接用网页基本上兼容性会有问题，特别是对于响应式布局的场景，发现一个叫 MJML 的语法可以帮助你简单快速写出带布局效果的好看邮件，这个思路还挺好的。
+iPhone 15 Pro 3D Mockups
+https://figma.com/community/file/1303247171848616022
+在 Figma 上看到一个 iPhone 15 Pro 3D Mockups 还可以，里面有不少 15 Pro 的 3d 模型可以直接使用，挑合适的还挺好的。 GPTs “泄露” 的 prompt
+https://github.com/linexjlin/GPTs
+逛 Github 发现有人整理 GPTs “泄露” 的 prompt，哈哈哈哈有一种偷学咒语的感觉。" />
+
+
+<link rel="canonical" href="http://localhost:1313/posts/156-%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B/" />
+
+
+<meta property="og:url" content="http://localhost:1313/posts/156-%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B/">
+  <meta property="og:site_name" content="World AI 世界 AI">
+  <meta property="og:title" content="富士山下">
+  <meta property="og:description" content="封面图来源于从大阪到东京新干线途中所拍，恰逢天气很好，拍到了远处的富士山 🗻，很很很不错，大概 5min 中观看时间。
+记录每周看到的接地气的前端潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+技术学习 用 JS 获取系统的电量情况
+https://deepesh-01.github.io/battery_indicator/
+原来前端浏览器场景下可以通过 navigator.getBattery() 获取到当前系统的电池情况，是否在充电、当前电量、放电充电时间这些信息，可以想想可以用在什么场景？
+Hacker News：您见过的最好的讲座是什么？
+https://news.ycombinator.com/item?id=34591291
+Hacker News 上有一个这样的帖子，What’s the best lecture series you’ve seen? 您见过的最好的讲座是什么？可以是技术方面的，也可以是其他方面的，是什么让它如此特别？有很多讨论，可以挑着看看。
+1 分钟带你了解 Bento box 设计趋势
+https://mp.weixin.qq.com/s/pXePIwnERlZSUSHqNO_GFQ
+个人很喜欢这种设计风格，类似于便当盒的设计，不过其实挺难驾驭的。
+潮流工具 MJML：让邮件内容像网页一样展示
+https://mjml.io/
+应该有同学有想让邮件内容像网页一样展示，特别在企业订阅类邮件的场景，但是直接用网页基本上兼容性会有问题，特别是对于响应式布局的场景，发现一个叫 MJML 的语法可以帮助你简单快速写出带布局效果的好看邮件，这个思路还挺好的。
+iPhone 15 Pro 3D Mockups
+https://figma.com/community/file/1303247171848616022
+在 Figma 上看到一个 iPhone 15 Pro 3D Mockups 还可以，里面有不少 15 Pro 的 3d 模型可以直接使用，挑合适的还挺好的。 GPTs “泄露” 的 prompt
+https://github.com/linexjlin/GPTs
+逛 Github 发现有人整理 GPTs “泄露” 的 prompt，哈哈哈哈有一种偷学咒语的感觉。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-12-11T00:00:00+00:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="富士山下">
+  <meta name="twitter:description" content="封面图来源于从大阪到东京新干线途中所拍，恰逢天气很好，拍到了远处的富士山 🗻，很很很不错，大概 5min 中观看时间。
+记录每周看到的接地气的前端潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知
+技术学习 用 JS 获取系统的电量情况
+https://deepesh-01.github.io/battery_indicator/
+原来前端浏览器场景下可以通过 navigator.getBattery() 获取到当前系统的电池情况，是否在充电、当前电量、放电充电时间这些信息，可以想想可以用在什么场景？
+Hacker News：您见过的最好的讲座是什么？
+https://news.ycombinator.com/item?id=34591291
+Hacker News 上有一个这样的帖子，What’s the best lecture series you’ve seen? 您见过的最好的讲座是什么？可以是技术方面的，也可以是其他方面的，是什么让它如此特别？有很多讨论，可以挑着看看。
+1 分钟带你了解 Bento box 设计趋势
+https://mp.weixin.qq.com/s/pXePIwnERlZSUSHqNO_GFQ
+个人很喜欢这种设计风格，类似于便当盒的设计，不过其实挺难驾驭的。
+潮流工具 MJML：让邮件内容像网页一样展示
+https://mjml.io/
+应该有同学有想让邮件内容像网页一样展示，特别在企业订阅类邮件的场景，但是直接用网页基本上兼容性会有问题，特别是对于响应式布局的场景，发现一个叫 MJML 的语法可以帮助你简单快速写出带布局效果的好看邮件，这个思路还挺好的。
+iPhone 15 Pro 3D Mockups
+https://figma.com/community/file/1303247171848616022
+在 Figma 上看到一个 iPhone 15 Pro 3D Mockups 还可以，里面有不少 15 Pro 的 3d 模型可以直接使用，挑合适的还挺好的。 GPTs “泄露” 的 prompt
+https://github.com/linexjlin/GPTs
+逛 Github 发现有人整理 GPTs “泄露” 的 prompt，哈哈哈哈有一种偷学咒语的感觉。">
+
+
+
+<meta name="generator" content="Hugo 0.129.0">
+
+<link rel="stylesheet" href="/css/output.css" />
+
+<style>
+
+
+
+</style>
+
+
+    
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 pt-4 pb-4">
+
+  <div class="container flex justify-between px-4">
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="World AI 世界 AI" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          World AI 世界 AI
+        </a>
+        
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square">
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="About">About</div>
+      
+      
+
+      
+
+      
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+        <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+      </a>
+      
+
+      
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+        <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+      </a>
+      
+
+      
+      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+        <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+      </a>
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <section class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  <section class="mx-auto prose dark:prose-invert" id="dream-single-page">
+    <header>
+      <h1>富士山下</h1>
+      <p class="text-sm">
+        
+          
+            Monday, Dec 11, 2023
+          
+        
+
+        | <span>1 minute read</span>
+
+        
+        | <span>Update at
+          
+            
+              Monday, Dec 11, 2023
+            
+          </span>
+        
+      </p>
+      <div class="flex justify-between">
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span>
+  
+    John AI
+  
+  </span>
+</div>
+
+
+        <span class="flex items-center gap-2">
+  <a class="group inline-flex items-center p-2 text-sm rounded-full cursor-pointer hover:bg-primary" href="https://twitter.com/intent/tweet?text=%e5%af%8c%e5%a3%ab%e5%b1%b1%e4%b8%8b&url=http%3a%2f%2flocalhost%3a1313%2fposts%2f156-%25E5%25AF%258C%25E5%25A3%25AB%25E5%25B1%25B1%25E4%25B8%258B%2f" title="Share on X">
+    <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+  </a>
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2f156-%25E5%25AF%258C%25E5%25A3%25AB%25E5%25B1%25B1%25E4%25B8%258B%2f" title="Share on Facebook">
+    <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+  </a>
+</span>
+
+      </div>
+    </header>
+
+    <main>
+      
+
+      <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->封面图来源于从大阪到东京新干线途中所拍，恰逢天气很好，拍到了远处的富士山 🗻，很很很不错，大概 5min 中观看时间。<!-- raw HTML omitted --></p>
+<blockquote>
+<p><strong>记录每周看到的接地气的前端潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知</strong></p>
+</blockquote>
+<h2 id="技术学习">技术学习</h2>
+<p><strong>用 JS 获取系统的电量情况</strong><br>
+<a href="https://deepesh-01.github.io/battery_indicator/">https://deepesh-01.github.io/battery_indicator/</a><br>
+原来前端浏览器场景下可以通过 navigator.getBattery() 获取到当前系统的电池情况，是否在充电、当前电量、放电充电时间这些信息，可以想想可以用在什么场景？<br>
+<!-- raw HTML omitted --></p>
+<p><strong>Hacker News：您见过的最好的讲座是什么？</strong><br>
+<a href="https://news.ycombinator.com/item?id=34591291">https://news.ycombinator.com/item?id=34591291</a><br>
+Hacker News 上有一个这样的帖子，What&rsquo;s the best lecture series you&rsquo;ve seen? 您见过的最好的讲座是什么？可以是技术方面的，也可以是其他方面的，是什么让它如此特别？有很多讨论，可以挑着看看。<br>
+<!-- raw HTML omitted --></p>
+<p><strong>1 分钟带你了解 Bento box 设计趋势</strong><br>
+<a href="https://mp.weixin.qq.com/s/pXePIwnERlZSUSHqNO_GFQ">https://mp.weixin.qq.com/s/pXePIwnERlZSUSHqNO_GFQ</a><br>
+个人很喜欢这种设计风格，类似于便当盒的设计，不过其实挺难驾驭的。<br>
+<!-- raw HTML omitted --></p>
+<h2 id="潮流工具">潮流工具</h2>
+<p><strong>MJML：让邮件内容像网页一样展示</strong><br>
+<a href="https://mjml.io/">https://mjml.io/</a><br>
+应该有同学有想让邮件内容像网页一样展示，特别在企业订阅类邮件的场景，但是直接用网页基本上兼容性会有问题，特别是对于响应式布局的场景，发现一个叫 MJML 的语法可以帮助你简单快速写出带布局效果的好看邮件，这个思路还挺好的。<br>
+<!-- raw HTML omitted --></p>
+<p><strong>iPhone 15 Pro 3D Mockups</strong><br>
+<a href="https://figma.com/community/file/1303247171848616022">https://figma.com/community/file/1303247171848616022</a><br>
+在 Figma 上看到一个 iPhone 15 Pro 3D Mockups 还可以，里面有不少 15 Pro 的 3d 模型可以直接使用，挑合适的还挺好的。
+<!-- raw HTML omitted --></p>
+<p><strong>GPTs “泄露” 的 prompt</strong><br>
+<a href="https://github.com/linexjlin/GPTs">https://github.com/linexjlin/GPTs</a><br>
+逛 Github 发现有人整理 GPTs “泄露” 的 prompt，哈哈哈哈有一种偷学咒语的感觉。<br>
+<!-- raw HTML omitted --></p>
+<p><strong>Clipdrop：图片 AI 处理合集工具</strong><br>
+<a href="https://clipdrop.co/">https://clipdrop.co/</a><br>
+发现一个图片 AI 处理合集工具 Clipdrop ，包括 Stable Diffusion 生图、图片背景扩展、涂鸦变图像、擦出、去背景、光照优化、放大、背景替换等能力，免费版本完全够用，有需要小伙伴可以试试。<br>
+<!-- raw HTML omitted --></p>
+<h2 id="随便看看">随便看看</h2>
+<p><strong>AI 生成图片著作权侵权第一案判决书</strong><br>
+<a href="https://mp.weixin.qq.com/s/Wu3-GuFvMJvJKJobqqq7vQ">https://mp.weixin.qq.com/s/Wu3-GuFvMJvJKJobqqq7vQ</a><br>
+北京互联网法院针对人工智能生成图片（AI 绘画图片）著作权侵权纠纷作出一审判决，据悉该案为 AI 生成图片相关领域著作权第一案，值得一看。</p>
+<p><strong>2023 Design Tools Survey</strong><br>
+<a href="https://uxtools.co/survey/2023/demographics">https://uxtools.co/survey/2023/demographics</a><br>
+2023 关于设计师很全的一个设计工具调研报告，有方方面面比较想了解的内容。<br>
+<!-- raw HTML omitted --></p>
+
+    </main>
+  </section>
+
+  
+
+  
+  <div class="divider max-w-[65ch] mx-auto"></div>
+  
+
+  <section class="max-w-[65ch] mx-auto space-y-4">
+    
+    <article>
+      <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+        this.page.identifier = '\/posts\/156-%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B\/';
+        this.page.title = '富士山下';
+        this.page.url = 'http:\/\/localhost:1313\/posts\/156-%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B\/';
+    };
+    function initDisqus() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "your-disqus-shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+    setTimeout(() => {
+        initDisqus();
+    }, 3000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+    
+
+    
+
+    
+  </section>
+</div>
+
+
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+              <div>
+  
+  <p>
+    © 2016 - 2024 World AI 世界 AI
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+              <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-300 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="container">
+            <div class="dream-grid">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">About Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Hi, my name is John Ai.</p>
+<p>This is my blog.</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+
+  window.hasTwitterEmbed =  null 
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<script src="/js/grid.js"></script>
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
